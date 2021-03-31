@@ -29,5 +29,18 @@ class BackJoonWhile {
 		sc.close();
 		
 	}
+	
+	@Test
+	public void algo10951() {
+		
+		Scanner sc = new Scanner(System.in);
+		
+		while(sc.hasNextInt()){
+			
+			System.out.println(sc.nextInt() + sc.nextInt());
+		}
+		
+		sc.close();
+	}
 
 }
