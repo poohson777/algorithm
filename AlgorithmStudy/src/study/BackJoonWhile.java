@@ -42,5 +42,14 @@ class BackJoonWhile {
 		
 		sc.close();
 	}
+	
+	@Test
+	public void algo1110() {
+		
+		Scanner sc = new Scanner(System.in);
+		
+		sc.close();
+			
+	}
 
 }
