@@ -109,6 +109,8 @@ class BaekArr {
 		
 		Arrays.sort(arr);
 		M = arr[num-1]; // 받은 점수 중 최고점
+		
+		
 		double arr2[] = new double[num]; // 조작된 성적 넣는 배열
 		
 		for (int i = 0; i < arr.length; i++) {
