@@ -99,7 +99,7 @@ class BaekArr {
 		int num = sc.nextInt();
 		
 		int arr[] = new int[num];
-		int M = 0;
+		double M = 0.0;
 		
 		for (int i = 0; i < arr.length; i++) {
 			arr[i] = sc.nextInt();
@@ -109,20 +109,20 @@ class BaekArr {
 		
 		Arrays.sort(arr);
 		M = arr[num-1]; // 받은 점수 중 최고점
-		int arr2[] = new int[num]; // 조작된 성적 넣는 배열
+		double arr2[] = new double[num]; // 조작된 성적 넣는 배열
 		
 		for (int i = 0; i < arr.length; i++) {
 		
-			arr2[i] = (int) ((arr[i]/(double)M)*100);
+			arr2[i] =  (arr[i]/M)*100;
 		}
 		
-		int result = 0;
+		double result = 0;
 		
 		for (int i = 0; i < arr2.length; i++) {
 			result +=  arr2[i];
 		}
 		
-		System.out.println((double) result / num);
+		System.out.println(result / num);
 		
 	}
 }
