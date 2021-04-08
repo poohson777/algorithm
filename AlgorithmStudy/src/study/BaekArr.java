@@ -1,5 +1,6 @@
 package study;
 
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Scanner;
 
@@ -126,5 +127,46 @@ class BaekArr {
 		
 		System.out.println(result / num);
 		
+	}
+	
+	@Test
+	void algo8958() {
+		
+		Scanner sc = new Scanner(System.in);
+		
+		int num = sc.nextInt();
+				
+		ArrayList<String> lst = new ArrayList<String>();
+				
+		for(int i = 0; i<= num; i++) {
+			
+			lst.add(i, sc.nextLine());
+			
+		}
+		sc.close();
+		
+		int result = 0;
+		int idx = 0;
+		
+		for(int j=1; j<lst.size(); j++) {
+			
+			String[] arr =  lst.get(j).split("");
+			
+			for(int i = 0; i< arr.length; i++) {
+				
+				if(arr[i].equals("O")) {
+				
+					idx = idx+1;
+					result = result + idx;
+					
+				}else if(arr[i].equals("X")) {
+					idx = 0;
+				}
+				
+			}
+			System.out.println(result);
+			idx = 0;
+			result = 0;
+		}
 	}
 }
