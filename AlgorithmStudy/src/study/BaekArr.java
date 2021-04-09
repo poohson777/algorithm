@@ -169,4 +169,33 @@ class BaekArr {
 			result = 0;
 		}
 	}
+	
+	@Test
+	void algo4344() {
+		Scanner sc = new Scanner(System.in);
+		
+		int num = sc.nextInt();
+		
+		double score = 0;
+		
+		if(sc.hasNextLine()) {
+			
+			for(int i = 0; i<num; i++) {
+				
+				int idx = sc.nextInt();
+				
+				for(int j= 0; j < idx; j++) {
+					
+					score = score+sc.nextDouble();
+				}
+				
+				System.out.println(score);
+				score = 0;
+			}
+		}
+		
+		
+		sc.close();
+	}
+	
 }
