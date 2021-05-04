@@ -1,6 +1,7 @@
 package study;
 
 import java.util.Scanner;
+import java.util.StringTokenizer;
 
 import org.junit.jupiter.api.Test;
 
@@ -38,6 +39,59 @@ class BaekChar {
 		}else {
 			System.out.println(b);
 		}
+	}
+	
+	@Test
+	void algo1316() {
+		Scanner sc = new Scanner(System.in);
+		
+		int num = sc.nextInt();
+		String str = "";
+		int idx = 0;
+		int result = 0;
+		
+		for(int i = 0; i<num; i++) {
+			
+			str += sc.next();
+			
+		}
+		sc.close();
+		
+		String[] arr = str.split("");
+		
+		for(int i = 0; i< arr.length; i++) {
+			
+			if(arr[i].equals(arr[i+1]) && i !=arr.length-1 ) {
+				idx++;
+			}else if( i < arr.length-1){
+				idx=0;
+			}
+			
+			result = result+idx;
+			
+		}
+		
+		System.out.println(result);
+	}
+	
+	@Test
+	void algo1152() {
+		
+		Scanner sc = new Scanner(System.in);
+		
+		String a = sc.nextLine();
+		
+		sc.close();
+		
+		StringTokenizer st = new StringTokenizer(a, " ");
+		
+		System.out.println(st.countTokens());
+		
+	}
+	
+	@Test
+	void algo1157() {
+		
 	}
 
 }
