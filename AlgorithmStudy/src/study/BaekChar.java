@@ -89,9 +89,6 @@ class BaekChar {
 		
 	}
 	
-	@Test
-	void algo1157() {
-		
-	}
+
 
 }
