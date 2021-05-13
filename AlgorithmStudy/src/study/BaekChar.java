@@ -8,7 +8,7 @@ import org.junit.jupiter.api.Test;
 class BaekChar {
 
 	@Test
-	void algo908() {
+	void algo2908() {
 
 		Scanner sc = new Scanner(System.in);
 		
@@ -89,8 +89,38 @@ class BaekChar {
 		
 	}
 	
-
+	@Test
+	void algo11654() {
+		
+		Scanner sc = new Scanner(System.in);
+		
+		int num = sc.next().charAt(0);
+		
+		System.out.println(num);
+		
+		sc.close();
+	}
 	
+	@Test
+	void algo11720() {
+		
+		Scanner sc = new Scanner(System.in);
+		
+		int cnt = sc.nextInt();
+		String num = sc.next();
+		
+		String[] arr = new String[cnt];
+		arr = num.split("");
+		
+		int result = 0;
+		
+		for (int i = 0; i < cnt; i++) {
+			
+			result += Integer.parseInt(arr[i]);
+		}
+		sc.close();
+		System.out.println(result);
+	}
 	
 
 }
