@@ -122,5 +122,9 @@ class BaekChar {
 		System.out.println(result);
 	}
 	
+	@Test
+	void algo10809() {
+		
+	}
 
 }
